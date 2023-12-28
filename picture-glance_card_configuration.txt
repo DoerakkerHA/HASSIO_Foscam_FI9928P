@@ -1,0 +1,44 @@
+camera_view: auto
+type: picture-glance
+title: front
+entities:
+  - entity: input_button.camera_front_left
+    hold_action:
+      action: call-service
+      service: foscam.ptz
+      target:
+        entity_id: camera.13_front
+      data:
+        travel_time: 0.44
+        movement: left
+  - entity: input_button.camera_front_down
+    hold_action:
+      action: call-service
+      service: foscam.ptz
+      target:
+        entity_id: camera.13_front
+      data:
+        travel_time: 0.44
+        movement: down
+  - entity: input_button.camera_front_up
+    hold_action:
+      action: call-service
+      service: foscam.ptz
+      target:
+        entity_id: camera.13_front
+      data:
+        travel_time: 0.44
+        movement: up
+  - entity: input_button.camera_front_right
+    hold_action:
+      action: call-service
+      service: foscam.ptz
+      target:
+        entity_id: camera.13_front
+      data:
+        travel_time: 0.44
+        movement: right
+camera_image: camera.13_front
+theme: Mushroom
+hold_action:
+  action: none
